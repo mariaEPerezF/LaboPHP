@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="back">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+        <link href="Styles.css" rel="stylesheet" type="text/css">
+        <!--<script src="script.js"></script>-->
+
+    </head>
+    <body>
+
+        <div class="group">
+           <form method="POST" action="form.php">
+            
+            <h2>
+                <em>Formulario</em>
+            </h2>
+
+            <div class="form-question">
+                <label for="nombre">Nombre<spam><em>(requerido)</em></spam></label>
+                <input type="text" name="nombre" class="form-input" required/>
+            </div>
+            <div class="form-question">
+                <label for="apellido">Apellidos<spam><em>(requerido)</em></spam></label>
+                <input type="text" name="apellido" class="form-input" required/>
+            </div>
+
+            <div class="form-question">
+                <label for="email">Email<spam><em>(requerido)</em></spam></label>
+                <input type="text" name="email" class="form-input" required/>
+            </div>
+            <input type="submit" name="submit" class="form-btn" value="Suscribirse"/></br>
+
+            <p>
+            
+                <?php echo $respuesta; ?>
+            </p>
+
+           </form>
+        </div>
+    </body>
+</html>
